@@ -12,5 +12,32 @@ p {
 .fuente-negrita {font-weight: bold;
 
 }
+.estilo-normal {font-style: normal;
 
+}
+.fuente-style {font-style: italic;
+    
+}
 
+.fuente-google {font-family: 'Knewave', cursive;
+   font-size: 50px;   
+
+}
+
+.font-sincel {font-family:'Balsamiq Sans';
+    font-size: 40px;
+
+}
+/* balsamiq-sans-regular - latin */
+@font-face {
+    font-family: 'Balsamiq Sans';
+    font-style: normal;
+    font-weight: 400;
+    src: url('../fonts/balsamiq-sans-v3-latin-regular.eot'); /* IE9 Compat Modes */
+    src: local(''),
+         url('../fonts/balsamiq-sans-v3-latin-regular.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+         url('../fonts/balsamiq-sans-v3-latin-regular.woff2') format('woff2'), /* Super Modern Browsers */
+         url('../fonts/balsamiq-sans-v3-latin-regular.woff') format('woff'), /* Modern Browsers */
+         url('../fonts/balsamiq-sans-v3-latin-regular.ttf') format('truetype'), /* Safari, Android, iOS */
+         url('../fonts/balsamiq-sans-v3-latin-regular.svg#BalsamiqSans') format('svg'); /* Legacy iOS */
+  }
