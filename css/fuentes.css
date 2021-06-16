@@ -1,0 +1,42 @@
+h1 {
+    font-family: 'Courier New', Courier, monospaces;
+}
+p { 
+    font-size: 20px; font-family: Arial, Helvetica, sans-serif;
+}
+h2 {
+    font-weight: bolder;
+    font-size: x-large;
+}
+.Big_font {font-size: 50px;
+}
+.fuente-normal {font-weight: 400;
+
+}
+.fuente-negrita {font-weight: bold;
+
+}
+.estilo-normal {font-style: normal;
+
+}
+.fuente-style {font-style: italic;
+    
+}
+
+.fuente-google {font-family: 'Knewave', cursive;
+   font-size: 50px;   
+
+}
+
+.font-sincel {font-family:'Balsamiq Sans';
+    font-size: 40px;
+}
+.espaciado-letras {
+    letter-spacing: 0.2em;
+}
+.espaciado-palabras {
+    word-spacing: 0.3em;
+}
+.espaciado-lineas {
+    line-height: 2em;
+}
