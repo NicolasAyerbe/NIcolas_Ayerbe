@@ -13,3 +13,22 @@
 p {
     font-size: 1.5em;
 }
+.texto_indentado {
+    text-indent: 2em;
+    text-align: justify;
+    line-height: 1.2;
+}
+.texto_enfatizado {
+    font-size: 5em;
+}
+blockquote {
+    font-size: 3em;
+    color: darkblue;
+    font-style: oblique;
+    text-align: right;
+}
+
+.margenes {
+    margin: 3em 7em 10em 2em;
+    text-align: justify;
+}
