@@ -1,0 +1,62 @@
+
+h1{
+    text-align: center;
+    font-size: 40px;
+    
+}
+table {
+    border-collapse: collapse;
+    font-size: 1.6em; 
+    margin: 0 auto;
+    border: 1px solid rgb(64, 64, 64);
+  
+    
+}
+
+th{
+    border: 1px solid rgb(64, 64, 64);
+    padding: 0.8em 1.9em;
+    text-align: center;
+    background-color: rgb(118, 157, 180);
+    font-family: sans-serif;
+}
+td {
+    border: 1px solid rgb(64, 64, 64);
+    padding: 0.8em 1.9em;
+    text-align: center;
+    background-color: rgb(15, 148, 172);
+    font-family: cursive;
+
+}
+.border-titulo {
+    border-radius: 5px;
+    background-color: brown;
+    border: 3px solid brown;
+
+}
+.border-titulo2 {
+    border-radius: 5px;
+    background-color: yellowgreen;
+    border: 3px solid yellowgreen;
+}
+.border-titulo3 {
+    border-radius: 5px;
+    background-color: red;
+    border: 3px solid red;
+}
+.border-titulo4 {
+    border-radius: 5px;
+    background-color: orangered;
+    border: 3px solid orangered;
+}
+.border-titulo, .border-titulo2, .border-titulo3, .border-titulo4, th {
+    color: white;
+    border-radius: 5px;
+}
+.th-super-mercado {
+    background-color: rgba(76, 223, 191, 0.753);
+}
+.th-verdureria {
+    background-color: rgba(228, 231, 44, 0.877);
+}
+
