@@ -1,0 +1,70 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+.menu-1 {
+    
+    text-align: center;
+    font-size: 1.1em;
+    
+   
+}
+.texto-1{
+    
+    text-decoration: none;
+    color: rgb(64,64,64);
+    font-family: 'Roboto', sans-serif;
+}
+.Tipo-1 {
+    list-style: none;
+    float: left;
+    padding: 15px;
+    border: none;
+    border-right: 1px solid rgb(255, 107,0);
+}
+
+.grupo-1 {
+    background-color: white;
+    
+    
+}
+.menu-2 {
+    list-style: none;
+    margin-top: 40px;
+    height: 100%;
+    
+}
+.grupo-2 {
+    position: fixed;
+    height: 93%;
+    top: 3em; 
+    width: 20em;
+    overflow: auto;
+    background-color: white
+}
+
+.texto-2 {
+    display: block;
+    text-decoration: none;
+    color: white;
+    margin: 10px 5px;
+    cursor: pointer;
+    font-family: 'Roboto', sans-serif;
+    font-size: 1em;
+}
+.texto-2:hover {
+    background-color: rgb(53, 53, 50);
+}
+.items {
+    padding: 10px;
+    margin-bottom: 3px;
+    border-radius: 5px;
+    border-bottom: 1px solid rgb(27, 27, 27);
+    background-color: rgb(87, 87, 86);
+
+}
+.items:hover {
+    background-color: rgb(53, 53, 50);
+    cursor: pointer;
+}
+
