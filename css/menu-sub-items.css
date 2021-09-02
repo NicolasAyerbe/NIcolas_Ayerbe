@@ -39,6 +39,33 @@ a:hover {
     max-height: 500px;
     border-bottom: 1px solid white;
 }
-    
-
-   
+.menu-bar {
+    display: block;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    background: rgb(39, 185, 185);
+}
+nav ul li  .menu-nivle12 {
+    display: none;
+    position: absolute;
+    background: rgb(26, 22, 66);
+    text-align: left;
+}
+nav ul li:hover .menu-nivle12{
+    display: block;
+    width: 120%;
+    text-align: left;
+}
+header nav {
+    width: 80%;
+    height: calc(100% - 80%);
+    position: fixed;
+    right: 100%;
+    margin: 0;
+    overflow: scroll;
+}
+@media screen and (max-width: 800px ) {
+    body {
+        padding-top: 80px;
+    }
