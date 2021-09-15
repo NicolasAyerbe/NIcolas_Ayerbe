@@ -36,8 +36,13 @@ nav ul li:hover .children {
     text-align: left;
 }
 nav ul li .children li {
+    overflow: hidden;
     display: block;
     border-bottom: 1px solid rgb(119, 43, 106);
+}
+nav ul .children {
+    position: relative;
+    width: 100%;
 }
 .menu-bar {
     display: none;
@@ -59,6 +64,8 @@ p {
 .main-countent {
    margin: 30px;
 }
+
+
 @media only screen and (max-width: 716px) {
     
     body {
@@ -68,9 +75,12 @@ p {
        position: relative;
         height: calc(110% - 80px);
         width: 50%;
-        overflow: auto;
+        left: -100%;
+        overflow-x: auto;
+        overflow-y: hidden;
         
     }
+
     .menu-bar {
         display: block;
         position: fixed;
@@ -89,7 +99,7 @@ p {
         text-decoration: none;
     }
     h1 {
-        margin-top: 30px;
+        margin: 30px;
     }
     nav ul {
         text-align: left;
@@ -104,6 +114,10 @@ p {
          float: right;
          
      }
+    }
+    nav ul li:hover .children {
+        display: none;
+        
     }
 
 
