@@ -1,0 +1,17 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+.main {
+    background-image: url("../img/icono_iniciar_secion_200x70.png");
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 95vh;
+    background-position:right bottom;
+
+}
+body {
+    background-image: url("../img/Tierra_1.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+}
