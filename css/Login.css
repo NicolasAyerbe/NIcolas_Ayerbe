@@ -1,0 +1,58 @@
+body, html  {
+    height: 100%;
+}
+body {
+    margin: 0;
+    padding: 0;
+    background-image: url("../img/ciudad.jpg");
+    background-size: cover;
+    background-repeat:no-repeat ;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+.form-box {
+    width: 300px;
+    padding: 40px;
+    background:rgba(143, 153, 153,0.6);
+    text-align: center;
+    border-radius: 60px;
+}
+.form-title {
+    color: white;
+    text-transform: uppercase;
+    font-weight: 500;
+}
+.form-box input[type="text"],
+.form-box input[type="password"],
+.form-box button[type="submit"] {
+    border: 0;
+    background: none;
+    display: block;
+    margin: 20px auto;
+    padding: 14px 10px;
+    text-align: center;
+    border: 2px solid rgb(61, 61, 63);
+    width: 200px;
+    outline: none;
+    color: white;
+    border-radius: 24px;
+    transition: 0.25s;
+}
+.form-box input[type="text"]:focus,
+.form-box input[type="password"]:focus {
+    width: 280px;
+    color: white;
+} 
+.form-box button[type="submit"] {
+    border: 0;
+    background:none;
+    cursor: pointer;
+    border: 2px solid rgb(61, 61, 63);
+}
+.form-box button[type="submit"]:hover {
+    background: rgb(63, 62, 62); ;
+}
+    
