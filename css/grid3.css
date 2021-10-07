@@ -1,0 +1,54 @@
+h1 {
+    text-align: center;
+}
+.contenedor {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr  ;
+    gap: 10px;
+    width: 90%;
+    max-width: 1000px;
+    border: 7px solid black;
+    margin: 0 auto;
+    font-size: 1.8em;
+    /*
+    justify-items: start;
+    justify-items: end;
+    justify-items: center;
+    justify-items:stretch ;
+    
+    
+    align-items:start;
+    align-items:end;
+    */
+    justify-items: stretch;
+    align-items: center;
+     
+    
+}
+.contenedor  div  {
+    display: flex;
+    padding: 20px;
+    color: white;
+    background: turquoise;
+    box-shadow: 2px 2px 10px rgb(0,0,0,.25);
+    justify-content: center;
+    align-items: center;
+}
+.contenedor >.nombre-dia {
+    background: rgb(38, 71, 179);
+}
+.primer-dia {
+    grid-column-start:4 ;
+    grid-column-end:5 ;
+}
+.contenedor > .festivos {
+    background: rgb(85, 57, 187);
+}
+.contenedor >.nombre-mes {
+    grid-column-start:1 ;
+    grid-column-end:8 ;
+    background: none;
+    color: black;
+    font-style: italic;
+    font-size: 1.8em;
+}
