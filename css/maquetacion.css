@@ -26,13 +26,15 @@ a {
     text-decoration: none;
     border-right: black; 
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    padding-left: 15px;
 }
 .encabezado, .nav-bar, .img-principal, .cards {
     color: white;
     font-size: 1.8em;
     display: flex;
-    justify-content: center;
+    justify-content: top;
     border-radius: 8px;
+    
 }
 .main-container {
     display: grid;
@@ -74,10 +76,13 @@ body {
 .img-principal {
     background: rgb(231, 175, 71);
     grid-area: img-principal;
+    justify-content: center;
+    
 }
 .cards {
     display: flex;
     flex-direction: column;
+   
 }
 .card-1 {
     grid-area: card-1;
@@ -98,8 +103,8 @@ body {
     grid-area: card-6;
 }
 .img-card {
-     background: rgb(255, 140, 33);
-     max-width: 100%;
+     background: none;
+     text-align: center;    
 }
 .text-card {
     color: black;
