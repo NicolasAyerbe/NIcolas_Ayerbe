@@ -44,6 +44,32 @@ console.log("Hoy es: " + diaSemanaStr[dia])
  console.log("Fecha: " + diaSemanaStr[dia] + ", " + dia + " de " + mesesStr[mes] + " del año " + anyo )
 
 
+var fechaHoraLimite = new Date(Date.UTC(2021, 11, 10, 8,));
+fechaHoraLimite.setHours(8)
+console.log("Fecha y Hora de vencimiento: " + fechaHoraLimite);
+var ahoramismo = new Date();
+
+
+if (ahoramismo.getFullYear() <= fechaHoraLimite.getFullYear() &&
+    ahoramismo.getMonth() <= fechaHoraLimite.getMonth() &&
+    ahoramismo.getDate() <= fechaHoraLimite.getDate() &&
+    ahoramismo.getHours() <= fechaHoraLimite.getHours() &&
+    ahoramismo.getMinutes() <= fechaHoraLimite.getMinutes()) {
+        console.log("Falta: " + (ahoramismo.getDate - fechaHoraLimite.getDate()) + "dias, " +
+        (ahoramismo.getHours - fechaHoraLimite.getHours()) + "horas " +
+        (fechaHoraLimite.getMinutes() - ahoramismo.getMinutes) + "minutos");
+        console.log("El envio fue realizado con exito");
+      
+
+     }
+     else{
+         console.log("Lo sentimos. La fecha de envio ya paso");
+     }
+
+
+
+
+
 
  
 
