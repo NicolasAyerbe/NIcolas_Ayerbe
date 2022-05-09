@@ -8,12 +8,12 @@
 </head>
 <body>
     <h1>validacion del sistema</h1>
-     <form onSubmit="validarInfo('numeroDocumento');">
+     <form onsubmit="validarInfo('numeroDocumento');">
          
          <h3>Nombre</h3>
-         <input type="text" id="numeroDocumento">
+         <input type="text" id="Nombre">
          <h3>Apellido</h3>
-         <input type="text" id="numeroDocumento">
+         <input type="text" id="Apellido">
          <br><br>
          <h3>Numero de documento</h3>
          <input type="text" id="numeroDocumento">
@@ -22,9 +22,11 @@
 </body>
 <script>
     function validarInfo(numeroDocumento) {
-        var texto = document.getElementById(numeroDocumento);
-        if(texto.value === ""){
-            alert("completa todos los campos")
+        let text1 = document.getElementById(Nombre);
+        let text2 = document.getElementById(Apellido);
+        let text3 = document.getElementById(numeroDocumento);
+        if(text1.value === "" && text2.value === "" && text3.value === ""){
+           alert("completa todos los campos");
         }
     }
 </script>
