@@ -1,7 +1,9 @@
-function validarInfo(cod) {
-    var cod = document.getElementById(cod);
-    if(cod.value === "") {
-        alert("Ingrese el numero de documento");
+function validarInfo(numeroDocumento) {
+    alert("validacion");
+    let text1 = document.getElementById("Nombre");
+    let text2 = document.getElementById(Apellido);
+    let text3 = document.getElementById(numeroDocumento);
+    if(text1.value === "" || text2.value === "" || text3.value === ""){
+       alert("completa todos los campos");
     }
-    
 }
