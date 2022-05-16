@@ -1,8 +1,27 @@
-function validarInfo(campo) {
-    let text1 = document.getElementById("Nombre");
-    let text2 = document.getElementById("Apellido");
-    let text3 = document.getElementById("numeroDocumento");
-    if(text1.value === "" || text2.value === "" || text3.value === ""){
-       alert("completa todos los campos");
+
+"use strict"
+
+function guardarInfo() {
+    let numeroDocumento = document.getElementById("numeroDocumento").value;
+    if (numeroDocumento == "") {
+        alert("Por favor, ingrese el numero de documento");
+        return false;
     }
+    if (document.getElementById("nombreUsuario").value == ""){
+        alert("por favor, ingrese el nombre del usuario");
+        return false;
+    }
+    if (document.getElementById("apellidoUsuario").value == ""){
+        alert("por favor, ingrese el apellido del usuario");
+        return false;
+    }
+    alert("informacion guardada con exito");
+    limpiarformulario();
+    return true;
 }
+function limpiarformulario() {
+     document.getElementById("numeroDocumento").value = "";
+     document.getElementById("nombreUsuario").value = "";
+     document.getElementById("apellidoUsuario").value = "";
+}
+
