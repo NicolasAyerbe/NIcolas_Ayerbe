@@ -10,8 +10,7 @@
 <body>
     <div class="main-content">
         <div class="subtotal">
-            <label>Subtotal: </label><label class="USD">$</label><label class ="valorsubtotal" id="valorSubtotal"></label>
-            <label>Stock: </label><label class="stock">300</label>
+            <label class="USD">valor total: $</label><label class ="valorsubtotal" id="valorSubtotal">70000</label><br>
         </div>
         <div class="Pago">
             <p>Proceder pago (<label id="numeroProductos"><label id="cantidad"></label><label></label></label>)</p>
@@ -24,7 +23,7 @@
             <label> Descube la oscura historia</label><br><br>
             <label>por jhonathan black</label><br><br>
             <label><strong>formato .Pdf</strong></label><br><br>
-            <label class="USD">$</label><label class="valorUnitario" id="valor-unitario"></label>
+            <label class="USD">$</label><label class="valorUnitario" id="valorUnitario">70000</label>
         </div>
         <div class=" restar" onclick="restar()">
             <label>-<i></i></label>
@@ -32,13 +31,11 @@
         <div class="cantidad">
             <label id="cantidadProductos">1</label>
         </div>
-        <div class=" sumar" onclick="sumar()">
-            <label>+<i></i></label>
-        </div>
-        <div class="eliminar">
+        <div class=" sumar" onclick="sumar();">+</div>
+        <div class="eliminar" onclick="eliminar()">
             <label >Eliminar</label>
         </div>
-        <div class="Subcompra">
+        <div class="Subcompra" onclick="realizar()">
             <label >Comprar</label>
         </div>
        
