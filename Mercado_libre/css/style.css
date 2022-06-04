@@ -1,0 +1,120 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+  }
+.menu-bar {
+    display: none;
+    cursor: pointer;
+}
+nav {
+    background-color: #fcad03;
+    width: 100%;
+    position: fixed;
+/*  s   display:inline-block; */
+top:0;
+
+}
+ul {
+    list-style: none;
+   
+}
+li {
+    display: inline-block; 
+    position: relative; 
+} 
+nav ul li a {
+    font-size: 1.3em;
+    color: white;
+    text-decoration: none;
+    padding: 30px;
+    display: block;
+}
+a {
+    font-size: 1.3em;
+    color: white;
+    text-decoration: none;
+    padding: 20px;
+    display: block;
+}
+.children {
+   position: absolute;
+   display: none;
+   background-color: rgb(61, 14, 61);
+   text-align: center;
+}
+nav ul li:hover .children {
+    display: block;
+    width: 100%;
+    text-align: center;
+}
+nav ul li .children li {
+    overflow: hidden;
+    display: block;
+    border-bottom: 1px solid wheat;
+}
+nav ul li .children li a {
+    display: block;
+}
+.main-content {
+    margin: 95px 30px;
+}
+h1 {
+    margin-top: 50px;
+    margin:35px;
+    text-align: right;
+    font-family:Arial, Helvetica, sans-serif;
+    font-size: 2em;
+    color: rgb(0, 0, 0);
+}   
+p {
+    font-size: 1.3em;
+    line-height: 1.4em;
+    text-align: justify;
+}
+  body {
+    display: flex;
+    height: 100vh;
+    background: linear-gradient(#ff9f0f,#fcf803);
+  }
+  
+  .buscar {
+    position: relative;
+    padding: 5px;
+  }
+  
+  .buscar input {
+    width: 0;
+    height: 40px;
+    padding: 0 20px;
+    font-size: 18px;
+    color: #222;
+    outline: none;
+    border: 1px solid silver;
+    border-radius: 30px;
+    transition: all 0.6s ease;
+  }
+  
+  .btn {
+    width: 55px;
+    height: 55px;
+    line-height: 55px;
+    top: 0;
+    right: 0;
+    position: absolute;
+    background: #ffffff;
+    text-align: center;
+    color: rgb(0, 0, 0);
+    font-size: 18px;
+    border-radius: 50%;
+    cursor: pointer;
+  }
+  
+  .buscar:hover input {
+    width: 240px;
+  }
+  
+  .buscar input:focus {
+    width: 240px;
+  }

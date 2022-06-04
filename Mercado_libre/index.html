@@ -4,14 +4,42 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <link rel="stylesheet" href="css/style.css">
+     <title>Document</title>
+     <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+      integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
 </head>
-<body>
-    <div id="mainContent">
+<body> 
+<nav>
+    <ul>      
+        <li><a href="index.html"><i></i>Inicio</a></li></li>
+        <li><a href="#"><i></i>Categorias</a></li>
+        <li><a href="#"><i></i>Novedades</a></li>
+        <li><a href="#"><i></i>Contactenos</a></li>
+        <li><a href="#"><i></i>perfil</a></li>
+        <li><div id="mainContent">
 
+    
+            <div id="textoBusqueda"  class="buscar">
+                <input type="text" placeholder="Buscar" required />
+          
+                <div class="btn">
+                  <i class="fas fa-search icon"></i>
+                </div>
+              </div>
+              </div>
+              </li>  
+    </ul>
+</nav>
+<div class="main-content">
+        <h1>Autos:</h1>
+        <div id="auto1"> </div>
     </div>
-    <input id="buscarAutos" type="button" value="Buscar autos">
-    <div id="infoAutos"></div>
     <script src="js/script.js"></script>
 </body>
 </html>

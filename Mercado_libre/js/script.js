@@ -1,30 +1,19 @@
 "use strict"
-
-class Automovil {
-    constructor(marca,modelo,anyo) {
-        this.marca = marca;
-        this.modelo = modelo;
-        this.anyo = anyo;
+window.addEventListener("keydown", function(event) {
+    let busqueda = document.getElementById("textoBusqueda").value;
+    if(event.key== "Enter") {
+        limpiarVentana();
+        if (busqueda == "Mazda 3") {
+            mostrarVehiculo(auto2);
+            mostrarVehiculo(auto1);
+            mostrarVehiculo(auto3);
+            mostrarVehiculo(auto4);
+        }
+        else if (busqueda == "toyota corolla") {
+            mostrarVehiculo(auto5);
+        }
+        else {
+            this.alert("No se han encontrado coincidencias.");
+        }
     }
-}
-
-let auto = new Automovil();
-
-auto.anyo = 2021;
-auto.marca = "Mazda";
-auto.modelo = "3 prime";
-
-let buscarAutos = document.getElementById("buscarAutos");
-buscarAutos.addEventListener("click", function() {
-    maquetacion();
-    let infoAutomovil = auto.marca + " " + auto.modelo + " Modelo " + auto.anyo;
-    document.getElementById("infoAutos").innerHTML = infoAutomovil;
 });
-
-function maquetacion() {
-    let mainContent = document.getElementById("mainContent");
-    let marca = document.createElement("label");
-    let textoMarca = document.createTextNode("Hola soy un traqueto");
-    marca.appendChild(textoMarca);
-    mainContent.appendChild(marca);
-}
