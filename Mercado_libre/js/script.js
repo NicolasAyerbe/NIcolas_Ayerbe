@@ -44,11 +44,11 @@ class auto {
     }
 }
 
-let auto1 = new auto("Mazda 3", "2.8", 2019, 56000000, "");
+let auto1 = new auto("Mazda 3", "2.8", 2019, 56000000, "img/carro5.jpg");
 let auto2 = new auto("Mazda 4", "2.6", 2017, 19000000, "img/carro1.jpg");
 let auto3 = new auto("Mada 5", "3.0", 2020, 36000000, "img/carro2.jpg");
 let auto4 = new auto("Mazda 6", "3.1", 2021, 39000000, "img/carro3.jpg");
-let auto5 = new auto("Toyota", "bringe", 2018, 15000000, "");
+let auto5 = new auto("Toyota", "tundra", 2018, 15000000, "img/carro6.jpg");
 let auto6 = new auto("Toyota 2", "prado", 2022, 12000000, "img/carro4.jpg");
 
 function mostrarauto(auto) {
