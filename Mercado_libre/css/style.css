@@ -158,3 +158,11 @@ p {
   .contenido {
     margin-top:100px ;
   }
+  .compra{
+    color: white;
+    font-size: 30px;
+    float:right ;
+    margin-top: 27px;
+    margin-right: 27px;
+
+  }
