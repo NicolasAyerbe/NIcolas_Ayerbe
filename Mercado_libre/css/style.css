@@ -155,3 +155,6 @@ p {
   .buscar input:focus {
     width: 240px;
   }
+  .contenido {
+    margin-top:100px ;
+  }

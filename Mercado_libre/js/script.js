@@ -103,6 +103,7 @@ window.addEventListener("keydown", function(event) {
             mostrarauto(auto6);
         }
         else {
+            
         this.alert("No se han encontrado coincidencias con la busqueda.");
         }
     }
