@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <div class="main-content">
+        <div class="subtotal">
+            <label class="USD">valor total: $</label><label class ="valorsubtotal" id="valorSubtotal">70000</label><br>
+        </div>
+        <div class="Pago">
+            <p>Proceder pago (<label id="numeroProductos"><label id="cantidad"></label><label></label></label>)</p>
+        </div>
+        <div class="libro">
+            <img class="imgcleanjavascript" src="img/illuminati.jpg" alt="Clean Javascript">
+        </div>
+        <div class="info">
+            <label><h3>La historia secreta del mundo</h3></label><br>
+            <label> Descube la oscura historia</label><br><br>
+            <label>por jhonathan black</label><br><br>
+            <label><strong>formato .Pdf</strong></label><br><br>
+            <label class="USD">$</label><label class="valorUnitario" id="valorUnitario">70000</label>
+        </div>
+        <div class=" restar" onclick="restar()">
+            <label>-<i></i></label>
+        </div>
+        <div class="cantidad">
+            <label id="cantidadProductos">1</label>
+        </div>
+        <div class=" sumar" onclick="sumar();">+</div>
+        <div class="eliminar" onclick="eliminar()">
+            <label >Eliminar</label>
+        </div>
+        <div class="Subcompra" onclick="realizar()">
+            <label >Comprar</label>
+        </div>
+       
+        
+    </div>
+    
+    <script src="js/script.js"></script>
+</body>
+</html>

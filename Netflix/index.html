@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mecflix</title>
+    <script src="js/script.js"></script>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <div class="head">
+        <img src="img/logo_netflix.png" class="logo">
+        <nav class="menu">
+            <ul>
+                <li><a href="#">Inicio</a></li>
+                <li><a href="#">Series</a></li>
+                <li><a href="#">Opciones</a></li>
+            </ul>
+        </nav>
+
+    </div>
+    <div class="box-img-principal">
+        <img id="imgPrincipal" class="img-principal" src="img/araña2.jpg" alt="spiderman">
+        <div class="body">
+            <p id="textoPrincipal" class="texto"> El hombre araña</p><br>
+            <p id="cuerpoP" class="cuerpo_p">una pelicula peculiar de un nuevo universo del hombre araña, no te la pierdas</p>
+            <div class="btn">
+                <button class="btnver">Ver</button>
+                <button class="btnmt">posponer para ams tarde</button>
+            </div>
+        </div>
+    </div>
+    <br>
+      <h3>Tendencias</h3>
+    <div class="cinta-movies">
+    <img id="spiderman" class="img-cinta"  onmouseover="intercambiarImagen('img/araña2.jpg'); 
+    textov('El hombre araña '); 
+    bodyi('una pelicula peculiar de un nuevo universo del hombre araña, no te la pierdas')" src="img/araña.jpg" id="arana" alt="">
+
+    <img id="BreakingBad" class="img-cinta" onmouseover="intercambiarImagen('img/breaking-bad2.jpg');
+    textov('Breaking Bad'); 
+    bodyi('una serie con biran cranston, es conciderada de las mejores series creada, y tiene una comunidad muy activas')" src="img/Breaking-Bad.jpg" alt="">
+
+    <img id="madmax" class="img-cinta" onmouseover="intercambiarImagen('img/MadMax2.jpg');
+    textov('MadMax'); 
+    bodyi('una pelicula enfocada en el post apocalipsis donde las personas tiene que sobrevivir y la batallas mas grande es por el agua ')" src="img/madmax.jpg" alt="">
+
+    <img id="rickymorty" class="img-cinta" onmouseover="intercambiarImagen('img/mauricio.jpg')
+    textov('Rick y Morty'); 
+    bodyi('una serie descabellada, donde un anciano y su nieto tiene avernturas por todo el universo resolviendo problemas en raras situaciones');" src="img/ricardo.jpg" alt="">
+</div>
+</body>
+</html>
