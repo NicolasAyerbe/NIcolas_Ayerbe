@@ -1,78 +1,111 @@
 * {
     margin: 0;
     padding: 0;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
-.flex-justify-flex-center{
+header {
     display: flex;
-    gap: 20px;
-    justify-content:center;
-}
-.box-style-1 {
-    background: rgb(255, 255, 255);
-}
-.item-flex {
-    background: rgb(233, 232, 232);
-    width: 200px;
-    height: 200px;
-    color: rgb(0, 0, 0);
-    font-size: 1.5em;
-}
-
-nav {
-    background-color: #2a0088;
+    background: rgb(25,0,140);
+    height: 100px;
     width: 100%;
-    padding: 10px;
-    position: fixed;
-/*  s   display:inline-block; */
-top:0;
-
+    flex-direction: row;
+    justify-content: left;
+    align-items: center;
 }
-ul {
-    list-style: none;
-   
+.logo1 {
+    margin-left: 25px;
+    width: 70px;
+    height: 70px;
 }
-.main{
-    display: inline-block; 
-    position: relative; 
-} 
-nav ul .main a {
-    font-size: 1.3em;
+.icono {
     color: white;
+    font-size: 40px;
+    margin-left: auto;
+    margin-right: 20px;
+    cursor: pointer;
     text-decoration: none;
-    padding: 30px;
-    display: block;
 }
-nav ul .main .children li {
-    overflow: hidden;
-    display: block;
-    border-bottom: 1px solid wheat;
+#contenido {
+    background-color: rgb(243,242,246);
 }
-nav ul .main .children li a {
-    display: block;
-}
-.main-content {
-    margin: 95px 30px;
-}
-body {
-    display: flex;
-    height: 100vh;
-    background: whitesmoke;
-  }
-.contenido {
-    margin-top:100px ;
-  }
-  .logo{
-    float:left ;
-    margin-top: 10px;
-    margin-left: 10px;
 
-  }
-  .menu {
+.contenedorVuelo{
+    display:grid;
+    margin: 20px; /*15 25 20 25*/
+    background-color: white;
+    border-radius: 10px;
+    box-shadow:1px 1px 3px 1px rgba(96, 100, 100, 0.3) ;
+    border-color: white;
+    grid-template: "economico   vacio           vacio        "30px
+                   "horaSalida  duracion        horaLlegada  "35px
+                   "origen      duracionTiempo  destino      "30px
+                   "separador   separador       separador    "5px
+                   "paradas     valor           valor        "45px /
+                    1fr        1fr            1fr;
+
+
+}
+.economico{
+    grid-area: economico;
+    border-top-left-radius: 5px;
+    border-bottom-right-radius: 5px; 
+    padding: 5px;
+    font-size: .95em;
+    width: 150px;
     color: white;
-    font-size: 30px;
-    float:right ;
-    margin-top: 15px;
-    margin-right: 40px;
+    background-color: darkcyan;
+}
+.horaSalida{
+    grid-area: horaSalida;
+    font-size: 1.5em;
+    color: rgb(27,0,136);
+    margin-top: 5px;
+    margin-left: 25px;
+}
+.duracion{
+    grid-area: duracion;
+    display: flex;
+    justify-content: center;
+    align-items: center;    
+}
+.horallegada{
+    grid-area: horaLlegada;
+    font-size: 1.5em;
+    color: rgb(27,0,136);
+    margin-top: 5px;
+    margin-right: 25px;
+    text-align: right;
+}
+.origen{
+    grid-area: origen;
+    margin-left: 25px;
+}
+.duracionTiempo{
+    grid-area: duracionTiempo;
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+}
+.destino{
+    grid-area: destino;
+    margin-left: 25px;
 
-  }
-  
+}
+.separador {
+    grid-area: separador;
+    margin: 0 20px;
+    background-color: gray;
+    font-size: .2em; 
+}
+.paradas{
+    grid-area: paradas;
+    padding-left: 20px;
+}
+.valor{
+    grid-area: valor;
+    display: flex;
+    padding-right: 20px;
+    justify-content: right;
+    align-items: center; 
+
+}
