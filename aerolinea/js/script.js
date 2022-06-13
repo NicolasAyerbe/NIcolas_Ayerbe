@@ -86,7 +86,7 @@ function definirJornada(horaEvento) {
         "destino": "CAR",
         "precio": 1000000,
         "parada": "Directo",
-        "economico": "Premium" 
+        "economico": "Privado" 
     },
     {
         "horaSalida":  horaSalida3Str,
