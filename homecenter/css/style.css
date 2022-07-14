@@ -1,0 +1,21 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+.div-cris{ 
+    display: block;
+}
+.div-cris-hidden {
+   
+   display: none;
+}
+.div-ronaldo {
+    display: none;
+}
+.div-ronaldo-hidden{
+    display: block;
+    
+}
+
+
+
